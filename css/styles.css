@@ -151,3 +151,10 @@ footer {
   color: #bbb;
 }
 
+header {
+  background: url('saturnus.webp') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
