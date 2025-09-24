@@ -1,103 +1,114 @@
+<!-- simpan file ini sebagai index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab Teori & Komputasi</title>
+  <title>Lab Teori & Komputasi - Fisika</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0f1a;
-      color: #eee;
+      font-family: 'Georgia', serif;
+      color: white;
+      background: radial-gradient(circle at top, #0a0f29, #000);
     }
-
     header {
       background: rgba(0,0,0,0.7);
-      padding: 15px 30px;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 10;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 20px;
-      color: #f7d774;
+      font-size: 22px;
+      letter-spacing: 2px;
     }
-
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
     nav a {
       color: #ddd;
-      margin-left: 15px;
+      margin-left: 20px;
       text-decoration: none;
       transition: 0.3s;
     }
-
     nav a:hover {
       color: #f7d774;
     }
-
-    .search-bar {
+    .hero {
+      height: 90vh;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      background: rgba(255,255,255,0.1);
-      border-radius: 20px;
-      padding: 5px 10px;
-    }
-
-    .search-bar input {
-      background: transparent;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 5px;
-      font-size: 14px;
-    }
-
-    .search-bar button {
-      background: none;
-      border: none;
-      color: #f7d774;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    main {
-      padding: 40px;
       text-align: center;
+      background: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa") no-repeat center/cover;
+    }
+    .hero h2 {
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+      color: #f7d774;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Lab Teori & Komputasi</h1>
-    <div class="header-right">
-      <nav>
-        <a href="index.html">Beranda</a>
-        <a href="planet-bumi.html">Bumi</a>
-        <a href="planet-mars.html">Mars</a>
-        <a href="planet-jupiter.html">Jupiter</a>
-      </nav>
-      <form class="search-bar">
-        <input type="text" placeholder="Cari topik...">
-        <button type="submit">🔍</button>
-      </form>
-    </div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="planet-bumi.html">Bumi</a>
+      <a href="planet-mars.html">Mars</a>
+      <a href="planet-jupiter.html">Jupiter</a>
+    </nav>
   </header>
 
-  <main>
-    <h2>Selamat datang di halaman Planet 🌌</h2>
-    <p>Pilih planet di menu atas atau gunakan kolom pencarian untuk menemukan topik.</p>
-  </main>
+  <section class="hero">
+    <h2>Selamat Datang di Eksplorasi Alam Semesta</h2>
+    <p>Mempelajari Fisika Teori & Komputasi</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Bumi">
+      <h3>Bumi</h3>
+      <p>Planet tempat kita tinggal, dipelajari dari sisi gravitasi, atmosfer, dan dinamika fluida.</p>
+      <a href="planet-bumi.html">Baca selengkapnya</a>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+      <h3>Mars</h3>
+      <p>Planet merah dengan misteri kehidupan, analisis medan magnet dan iklimnya.</p>
+      <a href="planet-mars.html">Baca selengkapnya</a>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+      <h3>Jupiter</h3>
+      <p>Planet gas raksasa dengan badai abadi, penting dalam studi mekanika fluida.</p>
+      <a href="planet-jupiter.html">Baca selengkapnya</a>
+    </div>
+  </section>
 </body>
 </html>
 
