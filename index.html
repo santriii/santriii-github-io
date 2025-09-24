@@ -1,31 +1,81 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Singularity</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Singularity</h1>
-    <p>Menjelajahi Tata Surya dan Misteri Kosmos</p>
-  </header>
 
-  <main>
-    <section class="planet-grid">
-      <a href="merkurius.html" class="planet">Merkurius</a>
-      <a href="venus.html" class="planet">Venus</a>
-      <a href="bumi.html" class="planet">Bumi</a>
-      <a href="mars.html" class="planet">Mars</a>
-      <a href="jupiter.html" class="planet">Jupiter</a>
-      <a href="saturnus.html" class="planet">Saturnus</a>
-      <a href="uranus.html" class="planet">Uranus</a>
-      <a href="neptunus.html" class="planet">Neptunus</a>
-    </section>
-  </main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planetary Exploration</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #121212;
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background: url('images/background.jpg') no-repeat center center fixed;
+                background-size: cover;
+                padding: 50px;
+                text-align: center;
+                font-size: 3em;
+                color: white;
+            }
+            h1 {
+                font-size: 4em;
+            }
+            .content {
+                padding: 20px;
+                text-align: center;
+            }
+            .planet {
+                display: inline-block;
+                margin: 20px;
+                width: 200px;
+                text-align: center;
+            }
+            .planet img {
+                width: 100%;
+                border-radius: 10px;
+            }
+            .planet-name {
+                font-size: 1.5em;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
 
-  <footer>
-    <p>© 2025 santri</p>
-  </footer>
-</body>
-</html>
+        <header>
+            <h1>Welcome to Planetary Exploration</h1>
+            <p>Your journey through the cosmos begins here!</p>
+        </header>
+
+        <div class="content">
+            <div class="planet">
+                <img src="images/earth.jpg" alt="Earth">
+                <div class="planet-name">Earth</div>
+            </div>
+            <div class="planet">
+                <img src="images/mars.jpg" alt="Mars">
+                <div class="planet-name">Mars</div>
+            </div>
+            <div class="planet">
+                <img src="images/venus.jpg" alt="Venus">
+                <div class="planet-name">Venus</div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    '''
+
+    # Save homepage content to an HTML file
+    with open("planetary_website/index.html", "w") as file:
+        file.write(homepage_content)
+
+    print("Homepage created successfully!")
+
+# Call the function to create the website
+create_website()
+
