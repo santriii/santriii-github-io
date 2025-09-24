@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet - Lab Teori & Komputasi</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: radial-gradient(circle at top, #0a0f29, #000);
+      color: white;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    /* --- KIRI --- */
+    .main-planet img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .main-planet h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .main-planet p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .tags button {
+      background: #0a3d62;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      color: white;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .tags button:hover {
+      background: #f7d774;
+      color: black;
+    }
+
+    /* --- KANAN --- */
+    .article {
+      display: flex;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .article img {
+      width: 120px;
+      height: 90px;
+      object-fit: cover;
+    }
+    .article-text {
+      padding: 10px;
+    }
+    .article-text h3 {
+      margin: 0 0 5px;
+      font-size: 16px;
+      color: #f7d774;
+    }
+    .article-text p {
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lab Teori & Komputasi</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="planet.html">Planet</a>
+      <a href="astrofisika.html">Astrofisika</a>
+      <a href="fisika-teoritis.html">Fisika Teoritis</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- KIRI -->
+    <section class="main-planet">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Planet">
+      <h1>Planet</h1>
+      <p>Artikel-artikel yang membahas berbagai aspek planet di tata surya, mulai dari karakteristik unik, sejarah penemuan, hingga penelitian modern yang terus berkembang.</p>
+      <div class="tags">
+        <button>Bumi</button>
+        <button>Mars</button>
+        <button>Jupiter</button>
+      </div>
+    </section>
+
+    <!-- KANAN -->
+    <aside>
+      <div class="article">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+        <div class="article-text">
+          <h3>Misteri Kehidupan di Mars</h3>
+          <p>Studi terbaru menemukan bukti mineral yang mungkin terkait dengan air di masa lalu...</p>
+        </div>
+      </div>
+      <div class="article">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+        <div class="article-text">
+          <h3>Badai Abadi di Jupiter</h3>
+          <p>Spot Merah Besar sudah berlangsung ratusan tahun. Apa rahasianya?</p>
+        </div>
+      </div>
+      <div class="article">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Mercury_in_true_color.jpg" alt="Merkurius">
+        <div class="article-text">
+          <h3>Panas Ekstrem Merkurius</h3>
+          <p>Suhu siang bisa mencapai 430°C, sementara malam hari bisa -180°C.</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
