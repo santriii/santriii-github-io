@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab Teori & Komputasi - Fisika</title>
+  <title>Lab Teori & Komputasi</title>
   <style>
-    /* === CSS === */
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      color: white;
-      background: radial-gradient(circle at top, #0a0f29, #000);
+      font-family: Arial, sans-serif;
+      background: #0b0f1a;
+      color: #eee;
     }
 
     header {
@@ -21,17 +20,13 @@
       align-items: center;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
 
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      font-family: 'Trebuchet MS', sans-serif;
-      color: white;
-    }
-    .logo .highlight {
+    header h1 {
+      margin: 0;
+      font-size: 20px;
       color: #f7d774;
-      font-style: italic;
     }
 
     .header-right {
@@ -46,6 +41,7 @@
       text-decoration: none;
       transition: 0.3s;
     }
+
     nav a:hover {
       color: #f7d774;
     }
@@ -57,13 +53,16 @@
       border-radius: 20px;
       padding: 5px 10px;
     }
+
     .search-bar input {
       background: transparent;
       border: none;
       outline: none;
       color: white;
       padding: 5px;
+      font-size: 14px;
     }
+
     .search-bar button {
       background: none;
       border: none;
@@ -72,52 +71,15 @@
       font-size: 16px;
     }
 
-    /* Hero section + cards */
-    .hero {
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa") no-repeat center/cover;
-    }
-    .hero h2 {
-      font-size: 48px;
-      text-transform: uppercase;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+    main {
       padding: 40px;
-    }
-    .card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 10px;
-      padding: 20px;
-      transition: transform 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .card h3 {
-      margin: 15px 0 10px;
-      font-size: 20px;
-      color: #f7d774;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <!-- === HEADER === -->
   <header>
-    <div class="logo">
-      <span class="highlight">Lab</span> Teori & Komputasi
-    </div>
+    <h1>Lab Teori & Komputasi</h1>
     <div class="header-right">
       <nav>
         <a href="index.html">Beranda</a>
@@ -132,33 +94,10 @@
     </div>
   </header>
 
-  <!-- === HERO SECTION === -->
-  <section class="hero">
-    <h2>Selamat Datang di Eksplorasi Alam Semesta</h2>
-    <p>Mempelajari Fisika Teori & Komputasi melalui planet-planet</p>
-  </section>
-
-  <!-- === CARD SECTION === -->
-  <section class="cards">
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Bumi">
-      <h3>Bumi</h3>
-      <p>Planet tempat kita tinggal, dipelajari dari sisi gravitasi, atmosfer, dan dinamika fluida.</p>
-      <a href="planet-bumi.html">Baca selengkapnya</a>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
-      <h3>Mars</h3>
-      <p>Planet merah dengan misteri kehidupan, analisis medan magnet dan iklimnya.</p>
-      <a href="planet-mars.html">Baca selengkapnya</a>
-    </div>
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
-      <h3>Jupiter</h3>
-      <p>Planet gas raksasa dengan badai abadi, penting dalam studi mekanika fluida.</p>
-      <a href="planet-jupiter.html">Baca selengkapnya</a>
-    </div>
-  </section>
+  <main>
+    <h2>Selamat datang di halaman Planet 🌌</h2>
+    <p>Pilih planet di menu atas atau gunakan kolom pencarian untuk menemukan topik.</p>
+  </main>
 </body>
 </html>
 
