@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-family: 'Georgia', serif;
   color: white;
-  background: url("backround-bintang.jpg": fixed; /* biar ikut scroll kayak wallpaper */
+  background: url("backround-bintang.jpg") no-repeat center/cover;
+  background-attachment: fixed;
 }
 
 
