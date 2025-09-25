@@ -2,8 +2,7 @@ body {
   margin: 0;
   font-family: 'Georgia', serif;
   color: white;
-  background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80") no-repeat center/cover;
-  background-attachment: fixed; /* biar ikut scroll kayak wallpaper */
+  background: url("backround-bintang.jpg": fixed; /* biar ikut scroll kayak wallpaper */
 }
 
 
