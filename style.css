@@ -74,3 +74,48 @@ nav a:hover {
   font-size: 20px;
   color: #f7d774;
 }
+
+/* Tombol hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* Supaya posisi tombol pas */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* biar selalu di atas */
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* sembunyikan menu default */
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 70px;   /* jatuh tepat di bawah header */
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px 0 0 5px;
+  }
+
+  nav a {
+    margin: 10px 0; /* link jadi vertikal */
+  }
+
+  nav.show {
+    display: flex; /* muncul setelah tombol diklik */
+  }
+
+  .hamburger {
+    display: block; /* tombol aktif di HP */
+  }
+}
+
