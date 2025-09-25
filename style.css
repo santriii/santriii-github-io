@@ -3,8 +3,7 @@ body {
   margin: 0;
   font-family: 'Georgia', serif;
   color: white;
-  background: url("https://img.freepik.com/free-photo/beautiful-shot-night-sky-full-stars_181624-622.jpg") no-repeat center/cover; 
-  /* ganti link di atas pakai gambar bintang yang kamu mau */
+  background: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80") no-repeat center/cover;
 }
 
 header {
