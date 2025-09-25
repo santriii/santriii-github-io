@@ -1,8 +1,10 @@
+
 body {
   margin: 0;
   font-family: 'Georgia', serif;
   color: white;
-  background: radial-gradient(circle at top, #0a0f29, #000);
+  background: url("https://img.freepik.com/free-photo/beautiful-shot-night-sky-full-stars_181624-622.jpg") no-repeat center/cover; 
+  /* ganti link di atas pakai gambar bintang yang kamu mau */
 }
 
 header {
@@ -54,14 +56,18 @@ nav a:hover {
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  border-radius: 15px;
   padding: 20px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
+  backdrop-filter: blur(10px);  /* efek blur glass */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .card:hover {
   transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .card img {
@@ -74,5 +80,4 @@ nav a:hover {
   font-size: 20px;
   color: #f7d774;
 }
-
 
