@@ -3,74 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jupiter</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Planet Jupiter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #001f3f, #003366); /* biru gradasi */
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 50, 0.8);
+      color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #00c4ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background: rgba(0,0,50,0.8);
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Lab Teori & Komputasi</h1>
     <nav>
-      <a href="index.html">Beranda</a>
-      <a href="jupiter.html">Jupiter</a>
-      <a href="venus.html">Venus</a>
-      <a href="tentang.html">Tentang</a>
+      <a href="#">Beranda</a>
+      <a href="#">Jupiter</a>
+      <a href="#">Venus</a>
+      <a href="#">Tentang</a>
     </nav>
   </header>
 
-  <main class="content">
-    <h2>Jupiter: Planet Raksasa dengan Kondisi Ekstrem</h2>
-    <p>
-      Jupiter dikenal sebagai planet terbesar dalam tata surya dan menyimpan berbagai fenomena yang unik sekaligus ekstrem. 
-      Karakteristiknya yang luar biasa menjadikan planet ini salah satu objek paling menarik untuk dipelajari dalam bidang astrofisika 
-      maupun eksplorasi antariksa.
-    </p>
+  <main class="container">
+    <section class="card">
+      <h2>Jupiter: Planet Raksasa dengan Kondisi Ekstrem</h2>
+      <p>Jupiter dikenal sebagai planet terbesar dalam tata surya dan menyimpan berbagai fenomena yang unik sekaligus ekstrem...</p>
+    </section>
 
-    <h2>Bintik Merah Besar</h2>
-    <p>
-      Salah satu ciri paling menonjol pada Jupiter adalah keberadaan Bintik Merah Besar, yaitu sebuah badai raksasa yang telah bertahan 
-      selama lebih dari tiga setengah abad. Diameter badai ini diperkirakan mencapai sekitar 16.000 kilometer, lebih besar dibandingkan 
-      ukuran Bumi, dengan kecepatan angin yang dapat mencapai 430 hingga 680 kilometer per jam. Fenomena ini menjadi bukti betapa dinamis 
-      dan kompleksnya atmosfer Jupiter, serta terus menjadi objek penelitian bagi para ilmuwan.
-    </p>
+    <section class="card">
+      <h2>Bintik Merah Besar</h2>
+      <p>Salah satu ciri paling menonjol pada Jupiter adalah keberadaan Bintik Merah Besar...</p>
+    </section>
 
-    <h2>Medan Magnet dan Radiasi</h2>
-    <p>
-      Jupiter memiliki medan magnet yang luar biasa kuat, sekitar 20.000 kali lebih besar dibandingkan dengan Bumi. Medan magnet tersebut 
-      membentuk sabuk radiasi yang sangat luas dan berbahaya, dengan intensitas cukup tinggi untuk merusak instrumen elektronik yang tidak 
-      memiliki perlindungan khusus. Misi Juno milik NASA bahkan harus melapisi peralatan ilmiahnya dengan wadah berbahan titanium agar mampu 
-      bertahan dari kondisi radiasi ekstrem. Menariknya, medan magnet yang begitu kuat juga menghasilkan aurora yang jauh lebih besar dan 
-      terang dibandingkan dengan aurora di Bumi.
-    </p>
+    <section class="card">
+      <h2>Medan Magnet dan Radiasi</h2>
+      <p>Jupiter memiliki medan magnet yang luar biasa kuat, sekitar 20.000 kali lebih besar dibandingkan dengan Bumi...</p>
+    </section>
 
-    <h2>Satelit Alami Jupiter</h2>
-    <p>
-      Keunikan Jupiter tidak hanya terletak pada planetnya, tetapi juga pada satelit-satelit alaminya yang berjumlah lebih dari sembilan 
-      puluh. Io, misalnya, merupakan objek dengan aktivitas vulkanik paling tinggi di tata surya. Europa diperkirakan memiliki lautan air 
-      asin di bawah lapisan es tebal, yang membuka kemungkinan adanya kehidupan mikroba. Ganymede, satelit terbesar di tata surya, bahkan 
-      memiliki ukuran yang melebihi planet Merkurius. Sementara itu, Callisto yang permukaannya penuh dengan kawah berfungsi sebagai arsip 
-      geologis yang menyimpan sejarah awal tata surya.
-    </p>
+    <section class="card">
+      <h2>Satelit Alami Jupiter</h2>
+      <p>Keunikan Jupiter tidak hanya terletak pada planetnya, tetapi juga pada satelit-satelit alaminya yang berjumlah lebih dari sembilan puluh...</p>
+    </section>
 
-    <h2>Kesimpulan</h2>
-    <p>
-      Jupiter bukan hanya planet raksasa, melainkan juga sebuah laboratorium alam yang menyajikan berbagai fenomena unik dan ekstrem. 
-      Badai abadi, radiasi mematikan, medan magnet yang kuat, serta satelit-satelit dengan karakteristik luar biasa menjadikannya salah satu 
-      objek paling penting dalam penelitian astronomi modern. Dengan segala kompleksitasnya, Jupiter tetap menjadi simbol betapa luas dan 
-      menakjubkannya tata surya yang kita huni.
-    </p>
+    <section class="card">
+      <h2>Kesimpulan</h2>
+      <p>Jupiter bukan hanya planet raksasa, melainkan juga sebuah laboratorium alam yang menyajikan berbagai fenomena unik...</p>
+    </section>
 
-    <section class="references">
+    <section class="card">
       <h2>Referensi</h2>
-      <p>
-        NASA Juno Mission: <a href="https://www.nasa.gov/juno" target="_blank">nasa.gov/juno</a><br>
-        NASA Jupiter Fact Sheet: <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html" target="_blank">NASA</a><br>
-        ESA Science: <a href="https://sci.esa.int/web/jupiter" target="_blank">Jupiter Overview</a>
-      </p>
+      <p><a href="https://www.nasa.gov/juno" target="_blank">NASA Juno Mission</a><br>
+      <a href="https://solarsystem.nasa.gov/planets/jupiter/overview/" target="_blank">Jupiter Overview</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Lab Teori & Komputasi</p>
+    &copy; 2025 Lab Teori & Komputasi
   </footer>
 </body>
 </html>
+
