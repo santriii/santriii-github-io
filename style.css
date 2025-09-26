@@ -80,4 +80,12 @@ nav a:hover {
   font-size: 20px;
   color: #f7d774;
 }
+ /* === Styling khusus halaman Jupiter === */
+.jupiter-page .card p {
+  text-align: justify;       /* rata kanan kiri */
+  text-justify: inter-word;  /* biar antar kata rata */
+  line-height: 1.7;          /* spasi antar baris */
+  margin-bottom: 1em;        /* jarak antar paragraf */
+  padding: 0 15px;           /* kasih ruang kanan kiri */
+}
 
