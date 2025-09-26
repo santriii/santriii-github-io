@@ -80,20 +80,3 @@ nav a:hover {
   font-size: 20px;
   color: #f7d774;
 }
-/* Styling khusus untuk halaman Jupiter */
-.jupiter-content {
-  max-width: 900px;   /* batas lebar teks */
-  margin: 40px auto;  /* biar teks di tengah */
-  padding: 0 20px;    /* jarak dari tepi layar */
-}
-
-.jupiter-content h2 {
-  color: #f7d774;
-  margin-top: 30px;
-}
-
-.jupiter-content p {
-  text-align: justify;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
