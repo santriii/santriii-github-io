@@ -4,131 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astrofisika</title>
-  <link rel="stylesheet" href="style.css">
   <style>
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('stars-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       gap: 30px;
       padding: 40px;
-      align-items: start;
+      flex-wrap: wrap;
     }
-
-    .left img {
-      width: 100%;
+    main img {
       border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     }
-
-    .left h2 {
-      margin-top: 20px;
-      font-size: 28px;
-      color: #f7d774;
-    }
-
-    .left p {
-      margin: 15px 0;
-      line-height: 1.6;
-    }
-
-    .buttons button {
-      background: #0d3b66;
-      color: white;
-      border: none;
-      padding: 10px 18px;
-      margin-right: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .buttons button:hover {
-      background: #f7d774;
-      color: black;
-    }
-
-    .right .card {
+    .cards {
       display: flex;
-      align-items: center;
-      gap: 15px;
-      background: rgba(0,0,0,0.6);
-      border-radius: 10px;
-      margin-bottom: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.7);
       padding: 15px;
-    }
-
-    .right .card img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .right .card h3 {
-      color: #f7d774;
-      margin: 0;
-    }
-
-    .right .card p {
-      margin: 5px 0 0;
-      font-size: 14px;
-      color: #ddd;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <h1>Fisika Teori & Komputasi</h1>
-    <nav>
-      <a href="index.html">Beranda</a>
-      <a href="astrofisika.html">Astrofisika</a>
-      <a href="#">Fisika Teoretis</a>
-      <a href="#">Fisika Komputasi</a>
-    </nav>
-  </header>
-
-  <!-- Konten -->
-  <div class="container">
-    <!-- Kiri -->
-    <div class="left">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Bumi">
-      <h2>Planet</h2>
-      <p>Artikel-artikel yang membahas berbagai aspek planet di tata surya, mulai dari karakteristik unik, sejarah penemuan, hingga penelitian modern yang terus berkembang.</p>
-      <div class="buttons">
-        <button>Bumi</button>
-        <button>Mars</button>
-        <button>Jupiter</button>
-      </div>
-    </div>
-
-    <!-- Kanan -->
-    <div class="right">
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
-        <div>
-          <h3>Misteri Kehidupan di Mars</h3>
-          <p>Studi terbaru menemukan bukti mineral yang mungkin terkait dengan air di masa lalu...</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
-        <div>
-          <h3>Badai Abadi di Jupiter</h3>
-          <p>Spot Merah Besar sudah berlangsung ratusan tahun. Apa rahasianya?</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Merkurius">
-        <div>
-          <h3>Panas Ekstrem Merkurius</h3>
-          <p>Suhu siang bisa mencapai 430°C, sementara malam hari bisa -180°C.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</body>
-</html>
+      border-radius: 10px;
+      display: flex;
