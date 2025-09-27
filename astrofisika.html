@@ -5,6 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astrofisika</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 40px;
+      align-items: start;
+    }
+
+    .left img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .left h2 {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #f7d774;
+    }
+
+    .left p {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    .buttons button {
+      background: #0d3b66;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button:hover {
+      background: #f7d774;
+      color: black;
+    }
+
+    .right .card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .right .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .right .card h3 {
+      color: #f7d774;
+      margin: 0;
+    }
+
+    .right .card p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #ddd;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,32 +88,47 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Astrofisika</h2>
-    <p>Jelajahi misteri alam semesta, dari bintang hingga galaksi.</p>
-  </section>
-
-  <!-- Konten Cards -->
-  <section class="cards">
-    <div class="card">
+  <!-- Konten -->
+  <div class="container">
+    <!-- Kiri -->
+    <div class="left">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Bumi">
-      <h3>Eksoplanet</h3>
-      <p>Penemuan planet-planet baru di luar tata surya yang menantang pemahaman kita tentang kosmos.</p>
+      <h2>Planet</h2>
+      <p>Artikel-artikel yang membahas berbagai aspek planet di tata surya, mulai dari karakteristik unik, sejarah penemuan, hingga penelitian modern yang terus berkembang.</p>
+      <div class="buttons">
+        <button>Bumi</button>
+        <button>Mars</button>
+        <button>Jupiter</button>
+      </div>
     </div>
 
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
-      <h3>Evolusi Bintang</h3>
-      <p>Dari nebula hingga supernova, bintang mengalami siklus hidup yang menakjubkan.</p>
-    </div>
+    <!-- Kanan -->
+    <div class="right">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+        <div>
+          <h3>Misteri Kehidupan di Mars</h3>
+          <p>Studi terbaru menemukan bukti mineral yang mungkin terkait dengan air di masa lalu...</p>
+        </div>
+      </div>
 
-    <div class="card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Hubble_ultra_deep_field.jpg" alt="Galaksi">
-      <h3>Galaksi</h3>
-      <p>Ribuan miliar galaksi dengan bentuk dan ukuran unik, rumah bagi miliaran bintang.</p>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg" alt="Jupiter">
+        <div>
+          <h3>Badai Abadi di Jupiter</h3>
+          <p>Spot Merah Besar sudah berlangsung ratusan tahun. Apa rahasianya?</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg" alt="Merkurius">
+        <div>
+          <h3>Panas Ekstrem Merkurius</h3>
+          <p>Suhu siang bisa mencapai 430°C, sementara malam hari bisa -180°C.</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
 </body>
 </html>
